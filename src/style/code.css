@@ -1,0 +1,23 @@
+/* Override PrismJS with our design system */
+pre[class*='language-'] {
+  background: var(--color-pre-bg);
+  border-radius: var(--radius-md);
+  margin: var(--space-xl) 0;
+  padding: var(--space-lg);
+  overflow-x: auto;
+}
+
+code[class*='language-'] {
+  background: none;
+  color: #abb2bf;
+  font-family: var(--font-mono);
+  font-size: var(--font-size-sm);
+}
+
+/* Inline code — not in a pre */
+:not(pre) > code[class*='language-'] {
+  background: var(--color-code-bg);
+  color: var(--color-code-text);
+  padding: 0.15em 0.4em;
+  border-radius: var(--radius-sm);
+}

@@ -1,0 +1,126 @@
+.post-header {
+  margin-bottom: var(--space-2xl);
+  padding-bottom: var(--space-xl);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.post-header h1 {
+  font-size: var(--font-size-4xl);
+  font-weight: 800;
+  line-height: var(--leading-tight);
+  letter-spacing: -0.03em;
+  margin-bottom: var(--space-md);
+  color: var(--color-text);
+}
+
+.post-meta {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-subtle);
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.post-content p {
+  margin-bottom: var(--space-lg);
+  line-height: var(--leading-loose);
+  color: var(--color-text);
+}
+
+.post-content h2 {
+  font-size: var(--font-size-3xl);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-top: var(--space-3xl);
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text);
+}
+
+.post-content h3 {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  margin-top: var(--space-2xl);
+  margin-bottom: var(--space-md);
+  color: var(--color-text);
+}
+
+.post-content h4 {
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-sm);
+  color: var(--color-text);
+}
+
+.post-content ul,
+.post-content ol {
+  padding-left: var(--space-xl);
+  margin-bottom: var(--space-lg);
+}
+
+.post-content li {
+  margin-bottom: var(--space-xs);
+  line-height: var(--leading-loose);
+}
+
+.post-content a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.post-content a:hover {
+  text-decoration: none;
+}
+
+.post-content img {
+  border-radius: var(--radius-md);
+  margin: var(--space-xl) 0;
+}
+
+.post-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-lg);
+  margin-top: var(--space-3xl);
+  padding-top: var(--space-xl);
+  border-top: 1px solid var(--color-border);
+}
+
+.post-nav a {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  text-decoration: none;
+  max-width: 45%;
+}
+
+.post-nav a:hover {
+  color: var(--color-accent);
+}
+
+.post-nav__label {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xs);
+  color: var(--color-text-subtle);
+  display: block;
+  margin-bottom: 4px;
+}
+
+@media (max-width: 640px) {
+  .post-header h1 {
+    font-size: var(--font-size-3xl);
+  }
+
+  .post-nav {
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+
+  .post-nav a {
+    max-width: 100%;
+  }
+}

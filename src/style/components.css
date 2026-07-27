@@ -1,0 +1,271 @@
+/* ─── Post Card ──────────────────────────────────────── */
+.post-card {
+  padding: var(--space-md) 0;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.post-card:last-child {
+  border-bottom: none;
+}
+
+.post-card__date {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xs);
+  color: var(--color-text-subtle);
+  margin-bottom: 4px;
+}
+
+.post-card__title {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--color-text);
+  line-height: var(--leading-snug);
+  transition: color var(--transition-fast);
+  display: block;
+  text-decoration: none;
+}
+
+.post-card__title:hover {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.post-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: var(--space-xs);
+}
+
+/* ─── Project Card ───────────────────────────────────── */
+.project-card {
+  padding: var(--space-lg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-bg-secondary);
+  transition: border-color var(--transition-fast);
+}
+
+.project-card:hover {
+  border-color: var(--color-accent);
+}
+
+.project-card__header {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-md);
+  margin-bottom: var(--space-sm);
+}
+
+.project-card__year {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xs);
+  color: var(--color-text-subtle);
+  flex-shrink: 0;
+}
+
+.project-card__title {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.project-card__description {
+  font-size: var(--font-size-base);
+  color: var(--color-text-muted);
+  line-height: var(--leading-normal);
+  margin-bottom: var(--space-md);
+}
+
+.project-card__links {
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.project-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: var(--space-sm);
+}
+
+/* ─── Projects Grid ──────────────────────────────────── */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-lg);
+}
+
+/* ─── Tags ───────────────────────────────────────────── */
+.tag {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xs);
+  padding: 2px 8px;
+  border-radius: 20px;
+  background: var(--color-accent-light);
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: background var(--transition-fast), color var(--transition-fast);
+  display: inline-block;
+}
+
+.tag:hover {
+  background: var(--color-accent);
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ─── Buttons / Links ────────────────────────────────── */
+.btn {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xs);
+  padding: 4px 12px;
+  border: 1px solid var(--color-accent-light);
+  border-radius: var(--radius-sm);
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: background var(--transition-fast), border-color var(--transition-fast);
+  cursor: pointer;
+  background: none;
+}
+
+.btn:hover {
+  background: var(--color-accent-light);
+  text-decoration: none;
+}
+
+/* ─── Homepage intro ─────────────────────────────────── */
+.intro {
+  margin-bottom: var(--space-3xl);
+  padding-bottom: var(--space-2xl);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.intro h1 {
+  font-size: var(--font-size-5xl);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: var(--leading-tight);
+  margin-bottom: var(--space-lg);
+  color: var(--color-text);
+}
+
+.intro p {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-muted);
+  line-height: var(--leading-loose);
+  max-width: 600px;
+  margin-bottom: var(--space-md);
+}
+
+.intro p:last-child {
+  margin-bottom: 0;
+}
+
+/* ─── Tag cloud page ─────────────────────────────────── */
+.tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-2xl);
+}
+
+.tag-cloud__item {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-sm);
+  padding: 4px 12px;
+  border-radius: 20px;
+  background: var(--color-accent-light);
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: background var(--transition-fast), color var(--transition-fast);
+}
+
+.tag-cloud__item:hover {
+  background: var(--color-accent);
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ─── About page ─────────────────────────────────────── */
+.about-content {
+  max-width: var(--max-width);
+}
+
+.about-section {
+  margin-bottom: var(--space-2xl);
+}
+
+.about-section h2 {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text);
+}
+
+.about-section p {
+  color: var(--color-text-muted);
+  line-height: var(--leading-loose);
+  margin-bottom: var(--space-md);
+}
+
+.about-section ul {
+  padding-left: var(--space-xl);
+  color: var(--color-text-muted);
+  line-height: var(--leading-loose);
+}
+
+.about-section li {
+  margin-bottom: var(--space-xs);
+}
+
+.about-section a {
+  color: var(--color-accent);
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+}
+
+.contact-link {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-sm);
+  color: var(--color-accent);
+  text-decoration: none;
+  padding: var(--space-xs) var(--space-md);
+  border: 1px solid var(--color-accent-light);
+  border-radius: var(--radius-md);
+  transition: background var(--transition-fast);
+}
+
+.contact-link:hover {
+  background: var(--color-accent-light);
+  text-decoration: none;
+}
+
+/* ─── 404 page ───────────────────────────────────────── */
+.not-found {
+  text-align: center;
+  padding: var(--space-3xl) 0;
+}
+
+.not-found h1 {
+  font-size: var(--font-size-5xl);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--color-text);
+  margin-bottom: var(--space-md);
+}
+
+.not-found p {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-xl);
+}
